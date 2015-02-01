@@ -12,16 +12,16 @@ Welcome to my HTML Style guide.
 * Don't include a trailing slash in self-closing elements—the HTML5 spec says they're optional.
 * Don’t omit optional closing tags (e.g. < /li > or < /body >).
 
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Page title</title>
-        </head>
-        <body>
-            <img src="images/company-logo.png" alt="logo">
-            <h1>Hello, world!</h1>
-        </body>
-    </html>
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <title>Page title</title>
+            </head>
+            <body>
+                <img src="images/company-logo.png" alt="logo">
+                <h1>Hello, world!</h1>
+            </body>
+        </html>
 
 
 
@@ -43,9 +43,9 @@ From the HTML5 spec:
 
 * Authors are encouraged to specify a lang attribute on the root html element, giving the document's language. This aids speech synthesis tools to determine what pronunciations to use, translation tools to determine what rules to use, and so forth.
 
-    <html lang="en-gb">
-        <!-- ... -->
-    </html>
+        <html lang="en-gb">
+            <!-- ... -->
+        </html>
 
 
 

@@ -89,36 +89,37 @@ Related property declarations should be grouped together following the order:
 4. Visual
 5. Other
 
-.declaration-order {
-
-/* Positioning */
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-z-index: 100;
-
-/* Box-model */
-display: block;
-float: right;
-width: 100px;
-height: 100px;
-
-/* Typography */
-font: normal 13px "Helvetica Neue", sans-serif;
-line-height: 1.5;
-color: #333;
-text-align: center;
-
-/* Visual */
-background-color: #FFF;
-border: 1px solid #E0E0E0;
-border-radius: 3px;
-/* Other */
-opacity: 1;
-
-}
+        .declaration-order {
+        
+        /* Positioning */
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+            
+        /* Box-model */
+            display: block;
+            float: right;
+            width: 100px;
+            height: 100px;
+            
+        /* Typography */
+            font: normal 13px "Helvetica Neue", sans-serif;
+            line-height: 1.5;
+            color: #333;
+            text-align: center;
+            
+        /* Visual */
+            background-color: #FFF;
+            border: 1px solid #E0E0E0;
+            border-radius: 3px;
+            
+        /* Other */
+            opacity: 1;
+            
+        }
 
 
 
