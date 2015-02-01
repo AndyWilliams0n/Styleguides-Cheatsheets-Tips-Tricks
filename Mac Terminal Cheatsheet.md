@@ -2,6 +2,8 @@
 
 ##TERMINAL COMMANDS
 
+| Command | Description |
+| ------- | ----------- |
 | Sudo [Command] | Run command with super-user privileges |
 |  |  |
 | Cd /path/to/directory | Change directory |
@@ -52,6 +54,8 @@
 
 ##HISTORY
 
+| Command | Description |
+| ------- | ----------- |
 | History n | Shows the typed commands - How many historical are displayed from the last command |
 | Ctrl-r | Lets you search through previously used commands |
 | ! [Value] | Run the last command entered that begins with 'value' |
@@ -61,6 +65,8 @@
 
 ##TO FILE
 
+| Command | Description |
+| ------- | ----------- |
 | > /path/to/file.txt | Generates a new file, noting that it can be overridden |
 | >> /path/to/file.txt | Adds the output to the file |
 
@@ -68,6 +74,8 @@
 
 ##HELP
 
+| Command | Description |
+| ------- | ----------- |
 | [Command] -h | Displays help for the command |
 | [Command] --help | help Displays the command |
 | [Command] help | Displays help for the command |
@@ -79,6 +87,8 @@
 
 ##TERMINAL TIPS
 
+| Command | Description |
+| ------- | ----------- |
 | python -m SimpleHTTPServer 8000 | Start a simple HTTP Server in any folder |
 |  |  |
 | defaults write com.apple.screencapture type [File extention] | Change the default Screenshot File Format * |
@@ -115,6 +125,8 @@
 
 ##KEY SHORTCUTS
 
+| Command | Description |
+| ------- | ----------- |
 | Tab | Auto-Complete commands and filenames. |
 | Ctrl + A | Go to top of the line you are typing |
 | Ctrl + E | Go to the end of the line you are typing |
