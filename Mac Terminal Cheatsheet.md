@@ -125,8 +125,8 @@
 
 ##KEY SHORTCUTS
 
-| Command | Description |
-| ------- | ----------- |
+| Keys | Description |
+| ---- | ----------- |
 | Tab | Auto-Complete commands and filenames. |
 | Ctrl + A | Go to top of the line you are typing |
 | Ctrl + E | Go to the end of the line you are typing |
