@@ -6,11 +6,15 @@ What is CSS? Cascading style sheets is a way to define how to display HTML eleme
 
 ###Selectors:
 
+Example:
+
     h1, h2, h3, p, a, div...
 
 
 
 ###Declaration
+
+Example:
 
     { color: #FFFFF; }
         |       |
@@ -44,6 +48,8 @@ What is CSS? Cascading style sheets is a way to define how to display HTML eleme
 
 Here are some good examples that apply the above guidelines:
 
+Example:
+
     // Example of good basic formatting practices
     
     .style-guide-format {
@@ -73,6 +79,8 @@ Here are some good examples that apply the above guidelines:
 
 In instances where a rule set includes only one declaration, consider removing line breaks for readability and faster editing. Any rule set with multiple declarations should be split to separate lines.
 
+Example:
+
     // Single declarations on one line
     
     .span1 { width: 60px; }
@@ -89,37 +97,39 @@ Related property declarations should be grouped together following the order:
 4. Visual
 5. Other
 
-        .declaration-order {
-        
-        /* Positioning */
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 100;
-            
-        /* Box-model */
-            display: block;
-            float: right;
-            width: 100px;
-            height: 100px;
-            
-        /* Typography */
-            font: normal 13px "Helvetica Neue", sans-serif;
-            line-height: 1.5;
-            color: #333;
-            text-align: center;
-            
-        /* Visual */
-            background-color: #FFF;
-            border: 1px solid #E0E0E0;
-            border-radius: 3px;
-            
-        /* Other */
-            opacity: 1;
-            
-        }
+Example:
+
+    .declaration-order {
+
+    /* Positioning */
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+
+    /* Box-model */
+        display: block;
+        float: right;
+        width: 100px;
+        height: 100px;
+
+    /* Typography */
+        font: normal 13px "Helvetica Neue", sans-serif;
+        line-height: 1.5;
+        color: #333;
+        text-align: center;
+
+    /* Visual */
+        background-color: #FFF;
+        border: 1px solid #E0E0E0;
+        border-radius: 3px;
+
+    /* Other */
+        opacity: 1;
+
+    }
 
 
 
@@ -133,6 +143,9 @@ Related property declarations should be grouped together following the order:
 ##Class naming conventions
 
 Always use spinal-case when naming classes. It makes it easier to read when viewing lots of code.
+
+Example:
+
 
     // Good
     
@@ -159,6 +172,8 @@ The class names disabled, mousedown, danger, hover, selected, and active should 
 ###Examples
 
 Here is a good and bad example that apply the above guidelines:
+
+Example:
 
     // Not so good
     
@@ -189,6 +204,8 @@ Here is a good and bad example that apply the above guidelines:
 
 Try not to duplicate code. If you have 4 buttons that you need to code up, don't create 4 classes and style each one:
 
+Example:
+
     // Not so good
     
     <a class="button-one">Button 1</a>
@@ -216,6 +233,8 @@ Try not to duplicate code. If you have 4 buttons that you need to code up, don't
 
 
 instead, try to break up those styles to more reusable and cleaner CSS:
+
+Example:
 
     // Good
     <a class="button red">Button 1</a>

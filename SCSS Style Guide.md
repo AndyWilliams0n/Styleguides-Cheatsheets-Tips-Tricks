@@ -16,6 +16,8 @@ Welcome to my SCSS Style guide.
 
 In general, the SCSS file organization should follow something like this:
 
+Example:
+
     scss styles
     ├── components
     │   ├── _buttons.scss
@@ -41,6 +43,8 @@ In general, the SCSS file organization should follow something like this:
 Including (S)CSS files
 This will be in the scss.scss file in the root 
 
+Example:
+
     @import "globals/reset",
         "globals/variables",
         "globals/scaffolding",
@@ -56,6 +60,8 @@ Elements that occur exactly once inside a page should use IDs, otherwise, use cl
 * **Bad** candidates for ids: navigation, item listings, item view pages (ex: issue view).
 
 When styling a component, start with an element + class namespace (prefer class names over ids), prefer direct descendant selectors by default, and use as little specificity as possible. Here is a good example:
+
+Example:
 
     <ul class="category-list">
         <li class="item">Category 1</li>
@@ -79,6 +85,8 @@ When styling a component, start with an element + class namespace (prefer class 
 ##Nesting in Sass
 
 Avoid unnecessary nesting. Just because you can nest, doesn't mean you always should. Consider nesting only if you must scope styles to a parent and if there are multiple elements to be nested.
+
+Example:
 
     // Without nesting
     
