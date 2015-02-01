@@ -102,7 +102,7 @@
 |  |  |
 | caffeinate -t [3600] | Prevent your mac from sleeping [Seconds] |
 | say [Hello, how are you] | Get you mac to talk to you [Words] |
-| /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user | Remove duplicate “Open With…” entries |
+| /System/Library/Frameworks/CoreServices.framework + /Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user | Remove duplicate “Open With…” entries |
 | open -a /Applications/AppName.app /path/to/file.txt | Open documents directly from the Terminal in your chosen app |
 | curl -O http://www.urltofile.com/path/to/file.txt | Download a file without a browser |
 | sudo shutdown -h now | Shutdown your Mac immediately |
