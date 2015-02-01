@@ -91,14 +91,14 @@
 | ------- | ----------- |
 | python -m SimpleHTTPServer 8000 | Start a simple HTTP Server in any folder |
 |  |  |
-| defaults write com.apple.screencapture type [File extention] | Change the default Screenshot File Format * |
-| defaults write com.apple.screencapture location [/path/to/directory, ~/Desktop] | Change the default Screenshot File Location *** |
+| defaults write com.apple.screencapture type [Extention] | Change the default Screenshot File Format * |
+| defaults write com.apple.screencapture location [/path/to/directory,~/Desktop] | Change the default Screenshot File Location *** |
 | defaults write com.apple.dock pinning -string end | Move dock to any corner you want ** |
-| defaults write com.apple.dashboard devmode [YES, NO] | Add widgets to you desktop [YES, NO] ** |
-| defaults write com.apple.finder AppleShowAllFiles [TRUE, FALSE] | Show hidden files [TRUE, FALSE] * |
-| defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool [TRUE, FALSE] | Enable AirDrop on older macs [TRUE, FALSE] * |
-| defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool [TRUE, FALSE] | Disable Google Chrome’s two-finger swipe navigation [TRUE, FALSE] |
-| defaults write com.apple.Dock showhidden -bool [TRUE, FALSE] | Make the icon of any hidden app in the Dock translucent [TRUE, FALSE] ** |
+| defaults write com.apple.dashboard devmode [YES,NO] | Add widgets to you desktop [YES,NO] ** |
+| defaults write com.apple.finder AppleShowAllFiles [TRUE,FALSE] | Show hidden files [TRUE,FALSE] * |
+| defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool [TRUE,FALSE] | Enable AirDrop on older macs [TRUE,FALSE] * |
+| defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool [TRUE,FALSE] | Disable Google Chrome’s two-finger swipe navigation [TRUE,FALSE] |
+| defaults write com.apple.Dock showhidden -bool [TRUE,FALSE] | Make the icon of any hidden app in the Dock translucent [TRUE,FALSE] ** |
 |  |  |
 | caffeinate -t [3600] | Prevent your mac from sleeping [Seconds] |
 | say [Hello, how are you] | Get you mac to talk to you [Words] |
@@ -112,9 +112,9 @@
 | ipconfig getifaddr en0 | Get your network IP address |
 | curl ipecho.net/plain; echo | Get your external IP address |
 | ping -c 10 www.google.co.uk | Test network connectivity |
-| sudo nvram SystemAudioVolume=%80 | Set the startup chime volume |
+| sudo nvram SystemAudioVolume=%50 | Set the startup chime volume |
 | sudo asr -restore -noverify -source /path/to/diskimage/dmg -target /Volumes/VolumeToRestoreTo | Restore a disk image to an external drive |
-| defaults write com.apple.dashboard mcx-disabled -boolean [TRUE, FALSE] | Turn off dashboard [TRUE, FALSE] ** |
+| defaults write com.apple.dashboard mcx-disabled -boolean [TRUE,FALSE] | Turn off dashboard [TRUE,FALSE] ** |
 |  |  |
 | telnet towel.blinkenlights.nl | Play StarWars in ASCII format |
 |  |  |
