@@ -1,30 +1,28 @@
-#CSS
+# CSS
 
-Welcome to my CSS Style guide.
+What is CSS? Cascading Style Sheets is a style sheet language used for describing the look and formatting of a document written in a markup language.
 
-What is CSS? Cascading style sheets is a way to define how to display HTML elements look.
-
-###Selectors:
-
-Example:
-
-    h1, h2, h3, p, a, div...
+* CSS files use the extension .css.
 
 
 
-###Declaration
+## Guidelines
 
-Example:
+One of the simplest forms of a styleguide is a set of rules regarding syntax and formatting. Having a standard way of writing (literally writing) CSS means that code will always look and feel familiar to all members of the team.
 
-    { color: #FFFFF; }
-        |       |
-     Property Value
+Further, code that looks clean feels clean. It is a much nicer environment to work in, and prompts other team members to maintain the standard of cleanliness that they found. Ugly code sets a bad precedent.
 
 
 
-##Coding style
+## CSS Syntax
 
-###Spacing
+Please checkout my [CSS Reference Guide](CSS%20Reference%20Guide.md) for more information.
+
+
+
+## Coding Style
+
+### Spacing
 
 * Use soft-tabs with a four space indent.
 * Put spaces after : in property declarations.
@@ -35,7 +33,7 @@ Example:
 * Each declaration should appear on its own line for more accurate error reporting.
 * End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.
 
-###Formatting
+### Formatting
 
 * Use hex color codes #000 unless using rgba().
 * Uppercase all hex values, use #FFF as it makes it nicer to look at.
@@ -43,51 +41,55 @@ Example:
 * Avoid specifying units for zero values, use margin: 0; instead of margin: 0px;.
 * Don't prefix property values or color parameters with a leading zero (e.g., .5 instead of 0.5)
 * Strive to limit use of shorthand declarations to instances where you must explicitly set all the available values.
+* Use hyphenated class names (no camelCase or snake_case).
 
-###Examples
+### Examples
 
 Here are some good examples that apply the above guidelines:
 
 Example:
 
-    // Example of good basic formatting practices
-    
-    .style-guide-format {
-	   color: #000;
-       background-color: rgba(0, 0, 0, .5);
-	   border: 1px solid #0F0;
+    /* Example of good basic formatting practices */
+
+    .class {
+        property: value;
+        property: value;
     }
-    
-    // Example of individual selectors getting their own lines (for error reporting)
-    
-    .multiple,
-    .classes,
-    .get-new-lines {
-	   display: block;
-       background: #FFF;
+
+    /* Example of individual selectors getting their own lines (for error reporting) */
+
+    .class,
+    .class,
+    .class {
+        property: value;
+        property: value;
     }
-    
-    // Avoid unnecessary shorthand declarations
-    
-    .not-so-good { margin: 0 0 20px; }
-    
-    .good { margin-bottom: 20px; }
+
+    /* Avoid unnecessary shorthand declarations */
+
+    .not-so-good {
+        margin: 0 0 20px;
+    }
+
+    .good {
+        margin-bottom: 20px;
+    }
 
 
 
-##Single declarations
+## Single Declarations
 
 In instances where a rule set includes only one declaration, consider removing line breaks for readability and faster editing. Any rule set with multiple declarations should be split to separate lines.
 
 Example:
 
-    // Single declarations on one line
-    
-    .span1 { width: 60px; }
+    /* Single declarations on one line (Optional) */
+
+    .span1 { property: value; }
 
 
 
-##Declaration order
+## Declaration Order
 
 Related property declarations should be grouped together following the order:
 
@@ -133,50 +135,53 @@ Example:
 
 
 
-##Pixels vs. ems
+## Pixels vs. Ems
 
 * Use px for font-size, because it offers absolute control over text.
 * Additionally, line-height is preferred because it does not inherit a percentage value of its parent element, but instead is based on a multiplier of the font-size.
 
 
 
-##Class naming conventions
+## Naming Conventions
 
 Always use spinal-case when naming classes. It makes it easier to read when viewing lots of code.
 
 Example:
 
+    /* Good */
 
-    // Good
-    
-    .this-is-using-spinal-case {}
-    
-    // Not so good
-    
-    .thisIsUsingCamelCase {}
+    .this-is-using-spinal-case { ... }
 
+    /* Not so good */
+
+    .thisIsUsingCamelCase { ... }
 
 
-##CSS Specificity guidelines
 
-If you must use an id selector (#selector) make sure that you have no more than one in your rule declaration. A rule like
+## CSS Specificity Guidelines
+
+If you must use an id selector (#selector) make sure that you have no more than one in your rule declaration.
+
+** It's best to remove classes all together, this will make it easier to code for as ID's take priority over classes. **
+
+Example:
+
+    /* Not so good */
 
     #header .search #quicksearch { ... }
 
-is considered harmful.
 
-When modifying an existing element for a specific use, try to use specific class names. Instead of .listings-layout.bigger use rules like .listings-layout.listings-bigger.
 
 The class names disabled, mousedown, danger, hover, selected, and active should always be namespaced by a class (button.selected is a good example).
 
-###Examples
+### Examples
 
 Here is a good and bad example that apply the above guidelines:
 
 Example:
 
-    // Not so good
-    
+    /* Not so good */
+
     <div id="container" class="card">
         <h1 id="header"></h1>
         <p></p>
@@ -184,35 +189,35 @@ Example:
     .card { background: #FFF; }
     #container h1#header { color: #777; }
     h1 : hover { color: #C00!important; }
-    
-    // Good
-    
+
+    /* Good */
+
     <div class="card">
         <h1></h1>
         <p></p>
     </div>
-    
+
     .card { background: #FFF; }
-    
+
     .card h1 { color: #777; }
-    
+
     .card h1:hover { color: #C00; }
-    
 
 
-##Duplication of code
+
+## Duplication Of Code
 
 Try not to duplicate code. If you have 4 buttons that you need to code up, don't create 4 classes and style each one:
 
 Example:
 
-    // Not so good
-    
+    /* Not so good */
+
     <a class="button-one">Button 1</a>
     <a class="button-two">Button 2</a>
     <a class="button-three">Button 3</a>
     <a class="button-four">Button 4</a>
-    
+
     .button-one {
         background: #EEE;
         color: red;
@@ -230,39 +235,38 @@ Example:
         color: black;
     }
 
-
-
 instead, try to break up those styles to more reusable and cleaner CSS:
 
 Example:
 
-    // Good
+    /* Good */
+
     <a class="button red">Button 1</a>
     <a class="button green">Button 2</a>
     <a class="button blue">Button 3</a>
     <a class="button black">Button 4</a>
-    
+
     .button { background: #EEE; }
-    
+
     .button.red { color: red; }
-    
+
     .button.green { color: green; }
-    
+
     .button.blue { color: blue; }
-    
+
     .button.black { color: black; }
 
 
 
-##Media query placement
+## Media Query Placement
 
 Place media queries as close to their relevant rule sets whenever possible.
 
 
 
-##Prefixed properties
+## Prefixed Properties
 
-Don't prefix, use Gulp-Autoprefixer.
+Don't prefix your CSS, use Gulp Autoprefixer (Preprocessing), Compass Autoprefixer (Preprocessing), [Prefix Free](http://leaverou.github.io/prefixfree/) or any other prefixer that you prefer. That way your code will remain clean and easy to read.
 
 
 

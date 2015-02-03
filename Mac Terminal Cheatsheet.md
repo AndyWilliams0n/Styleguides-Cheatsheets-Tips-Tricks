@@ -1,6 +1,6 @@
-#Mac Terminal Cheatsheet
+# Mac Terminal Cheatsheet
 
-##TERMINAL COMMANDS
+## TERMINAL COMMANDS
 
 | Command | Description |
 | ------- | ----------- |
@@ -52,7 +52,7 @@
 
 
 
-##HISTORY
+## HISTORY
 
 | Command | Description |
 | ------- | ----------- |
@@ -63,7 +63,7 @@
 
 
 
-##TO FILE
+## TO FILE
 
 | Command | Description |
 | ------- | ----------- |
@@ -72,7 +72,7 @@
 
 
 
-##HELP
+## HELP
 
 | Command | Description |
 | ------- | ----------- |
@@ -85,7 +85,7 @@
 
 
 
-##TERMINAL TIPS
+## TERMINAL TIPS
 
 | Command | Description |
 | ------- | ----------- |
@@ -123,7 +123,7 @@
 | killall SystemUIServer  | *** Relaunch UI, use after some of these commands |
 
 
-##KEY SHORTCUTS
+## KEY SHORTCUTS
 
 | Keys | Description |
 | ---- | ----------- |

@@ -1,10 +1,22 @@
-#HTML
+# HTML
 
-Welcome to my HTML Style guide.
+What is HTML? Hypertext Markup Language is a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.
 
-##Coding style
+* HTML files use the extension .html.
 
-###Spacing
+
+
+## Guidelines
+
+One of the simplest forms of a styleguide is a set of rules regarding syntax and formatting. Having a standard way of writing (literally writing) HTML means that code will always look and feel familiar to all members of the team.
+
+Further, code that looks clean feels clean. It is a much nicer environment to work in, and prompts other team members to maintain the standard of cleanliness that they found. Ugly code sets a bad precedent.
+
+
+
+## Coding Style
+
+### Spacing
 
 * Use soft tabs with a four space indent - they're the only way to guarantee code renders the same in any environment.
 * Nested elements should be indented once.
@@ -27,7 +39,7 @@ Example:
 
 
 
-###HTML5 doctype
+### HTML5 Doctype
 
 Enforce standards mode and more consistent rendering in every browser possible with this simple doctype at the beginning of every HTML page.
 
@@ -41,7 +53,7 @@ Example:
 
 
 
-###Language attribute
+### Language Attribute
 
 From the HTML5 spec:
 
@@ -55,7 +67,7 @@ Example:
 
 
 
-###IE compatibility mode
+### IE Compatibility Mode
 
 Internet Explorer supports the use of a document compatibility <meta> tag to specify what version of IE the page should be rendered as. Unless circumstances require otherwise, it's most useful to instruct IE to use the latest supported mode with edge mode.
 
@@ -65,7 +77,7 @@ Example:
 
 
 
-###Character encoding
+### Character Encoding
 
 Quickly and easily ensure proper rendering of your content by declaring an explicit character encoding. When doing so, you may avoid using character entities in your HTML, provided their encoding matches that of the document (generally UTF-8).
 
@@ -75,13 +87,13 @@ Example:
 
 
 
-###Practicality over purity
+### Practicality Over Purity
 
 Strive to maintain HTML standards and semantics, but not at the expense of practicality. Use the least amount of markup with the fewest intricacies whenever possible.
 
 
 
-###Attribute order
+### Attribute Order
 
 HTML attributes should come in this particular order for easier reading of code.
 
@@ -96,9 +108,7 @@ Classes make for great reusable components, so they come first. Ids are more spe
 
 Example:
 
-    <a class="" id="" data-bind="" href="#">
-        Example link
-    </a>
+    <a class="" id="" data-bind="" href="#"> link </a>
 
     <input class="" type="text">
 
@@ -106,21 +116,21 @@ Example:
 
 
 
-###Reducing markup
+### Reducing Markup
 
 Whenever possible, avoid superfluous parent elements when writing HTML. Many times this requires iteration and refactoring, but produces less HTML. Take the following example:
 
 Example:
 
     // Not so good
-    
-    <span class="avatar">
+
+    <span class="class">
         <img src="">
     </span>
-    
+
     // Good
-    
-    <img class="avatar" src="">
+
+    <img class="class" src="">
 
 
 
