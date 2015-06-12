@@ -1,4 +1,4 @@
-# Mac Terminal Cheatsheet
+# Mac Cheatsheet
 
 ## Startup Key Combinations
 
