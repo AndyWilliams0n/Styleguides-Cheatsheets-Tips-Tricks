@@ -30,3 +30,5 @@ I hope this can be useful to you :)
 
 [Mac Terminal Cheatsheet](https://github.com/4ndywilliamson/Styleguides-Cheatsheets-Tips-Tricks/blob/master/Mac%20Terminal%20Cheatsheet.md)
 
+[Git Cheatsheet](https://github.com/4ndywilliamson/Styleguides-Cheatsheets-Tips-Tricks/blob/master/Git%20Cheatsheet.md)
+
