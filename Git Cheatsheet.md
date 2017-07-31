@@ -7,7 +7,7 @@ Navigate using the terminal to the repository you need.
 
 | Command | Description |
 | ------- | ----------- |
-| git checkout -b dev/master | Switch to a branch, master or create a new branch |
+| git checkout -b dev/master/custom | Switch to a branch, master or create a new branch |
 |  |  |
 | git checkout 'File path' | Discard the changes to a file and revert from Git |
 |  |  |
@@ -23,7 +23,7 @@ Navigate using the terminal to the repository you need.
 |  |  |
 | git push | Push your commits live |
 |  |  |
-| git merge dev/master | Merge your branch to master |
+| git merge dev/master/custom | Merge your branch to master |
 
 
 | Commands |
@@ -42,3 +42,13 @@ Navigate using the terminal to the repository you need.
 | git merge dev |
 | git push |
 | git checkout dev |
+|  |
+| Branching your code: |
+|  |
+| git checkout -b dev/master/custom |
+| git push origin |
+| git checkout dev |
+|  |
+| Pushing changes once branched: |
+|  |
+| git push --set-upstream origin dev/master/custom
