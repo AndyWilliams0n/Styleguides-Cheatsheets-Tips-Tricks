@@ -46,8 +46,10 @@ Navigate using the terminal to the repository you need.
 | Branching your code: |
 |  |
 | git checkout -b dev/master/custom |
-| git push origin |
-| git checkout dev |
+| git status (review your changes) |
+| git add . |
+| git commit -m 'enter your message' |
+| git push --set-upstream origin dev/master/custom |
 |  |
 | Pushing changes once branched: |
 |  |
